@@ -1,0 +1,77 @@
+
+body {
+   margin: 0;
+   font-family: font-family: 'Raleway', sans-serif;
+}
+header {
+
+   width: 79%;
+   height: 50px;
+   color: white;
+   background-color: rgb(47, 49, 179);
+   padding: 15px; /* change to 30 */
+   padding-left: 25px;
+}
+/*.quizArea {
+   width: 40%;
+   float: left;
+   min-height: 400px;
+   color: white;
+   background-color: rgba(95, 151, 209, .8);
+   padding-top: 30px;
+   max-height: 400px;
+
+}*/
+.quizBackground {
+   width: 40%; /*of parent from 40 */
+   height: 400px;
+   /*background-color: rgb(47, 49, 179);*/
+   background-color: rgba(95, 151, 209, .8);
+   /*padding: 1em;*/
+   /*margin-top: 1em;*/
+   padding-left: 1em;
+   font-family: 'Raleway', sans-serif;
+   color: white;
+   font-weight: bold;
+   font-size: 1.5em;
+   line-height: .6;
+   max-height: 400px;
+   float: left;
+
+}
+#imageLocation {
+   clear: both;
+   margin-top: .5em;
+
+}
+button {
+   font-size: 2em;
+    font-weight: bold;
+    color: rgb(47, 49, 179);
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 .5em .6em;
+    padding: .05em;
+    padding-left: .5em;
+    padding-right: .5em;
+
+}
+img {
+   float: left;
+   margin: .3em .3em .3em 0;
+   width: 100px;
+}
+#map-canvas {
+   width: 40%; /* from 49 */
+   float: left;
+   margin: 0;
+   background-color: black;
+   min-height: 400px;
+   max-height: 400px;
+}
+h1, h2, h3 {
+   font-family: 'Roboto Condensed', sans-serif;
+}
+header img, header h1 {
+   display: inline-block;
+}

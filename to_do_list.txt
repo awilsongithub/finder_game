@@ -1,0 +1,177 @@
+////////////////////////////////////////
+//      TO DO LIST for family finder  //
+////////////////////////////////////////
+// do javascript by lunchtime
+   // get instr help AM ASAP
+      // move inc++ so sure it runs???
+      //why setMarker and append imgs at end ?????
+         // replace inc, inc +1 "hardcoded" with
+            // if (guess.toLocaleLowerCase == names.indexOf(0))
+      // re initMap with each loop through family objects
+         // put object names in an (array?) together?
+   // add button hide/show to loop
+// add aesthetic after lunch
+// keep 1 player, just log some counter
+// reorder text, input, button even w just a prompt
+   // form input is frosting
+// aesthetics
+   // see other quiz/game
+   // background-image grogg all family photo
+   // photos line up along bottom of screen below text & map
+      // maybe with hide/show('slow')
+         //so i can format exactly
+         // so appearance more animated/fun
+
+
+////////////////////////////////////////////////
+// DIDNT WORK AND REMOVED                     //
+////////////////////////////////////////////////
+
+// i broke this....
+// reaching end of families for loop,
+// inc++; // increment to next family in array
+// quizBackground.append('<p>Click above to FIND MORE FAMILY!</p>'); // cue user to proceed
+
+// } // end family for loop
+
+// took this out
+// "win game" message once "found" all families
+// quizBackground.append('<p>The Family\'s All Here!</p>');
+
+// initMap(41.931929, -87.698327, 4); // didn't work
+
+
+
+
+
+
+
+
+
+ // // i broke this...//////////////////////
+ // // map global variables
+ // var mapCanvas, mapOptions, map;
+ //
+ // // map initialize function with 3 parameters
+ // function initMap() {
+ //   mapCanvas = document.getElementById ('map-canvas');
+ //   mapOptions = {
+ //       center: new google.maps.LatLng(39.74354, -84.07497),
+ //       zoom: 4,
+ //       mapTypeId: google.maps.MapTypeId.HYBRID
+ //    } // end options
+ // } // end initMap
+ //
+ // // map object constructor (initMap) takes two arguments
+ // map = new google.maps.Map(mapCanvas, mapOptions);
+
+
+//////////////////////////////////////////
+//       RECYCLE BIN UNUSED CODE        //
+//////////////////////////////////////////
+
+// CENTER MAP AND SETMARKER AT FAMILY[INC] COORDINATES
+// initMap(families[inc].lat, families[inc].long, 8);
+// setMarker(families[inc].lat, families[inc].long);
+
+
+
+ // if ( nameGuess.toLocaleLowerCase() == (
+//    families[inc].name1.toLocaleLowerCase()  ||
+//    families[inc].name2.toLocaleLowerCase()  || families[inc].child1.toLocaleLowerCase() || families[inc].child2.toLocaleLowerCase() || families[inc].child3.toLocaleLowerCase()
+//    )
+
+// )  {
+//    quizBackground.append('<p>Yes! ' + nameGuess + ' lives in ' + families[inc].city + '.</p>');
+//    imageLocation.append(families[inc].image1);
+//
+// } else if (nameGuess.toLocaleLowerCase() == names[inc + 1].toLocaleLowerCase()) {
+//    quizBackground.append('<p>Yes! ' + names[inc + 1] + ' lives in ' + cities[inc] + '.</p>');
+//    imageLocation.append(images[inc + 1]); // add their img
+// }
+// var nameGuess = prompt('Who ELSE lives in ' + cities[inc] + '? (type name)');
+// if (nameGuess.toLocaleLowerCase() == names[inc].toLocaleLowerCase()) {
+//    quizBackground.append('<p>Yes! ' + names[inc] + '  lives in ' + cities[inc] + '.</p>');
+//    imageLocation.append(images[inc]); // add their img
+//    inc++;
+// } else if (nameGuess.toLocaleLowerCase() == names[inc + 1].toLocaleLowerCase()) {
+//    quizBackground.append('<p>Yes! ' + names[inc + 1] + ' lives in ' + cities[inc] + '.</p>');
+//    imageLocation.append(images[inc + 1]); // add their img
+//    inc++;
+// }
+
+
+
+
+///this Wed Afternoon Map code commmented out temporarily...//
+// ++++++++ add back in?????? ++++++++++
+
+// var myLatLng = {lat: -25.363, lng: 131.044}; // location object
+// ///******************************************///
+// //       new map code from google api help    //
+// ///******************************************///
+// function initMap(lat, lng) {
+//    // var myLatLng = {latitude, longitude};
+//
+//   var map = new google.maps.Map(document.getElementById('map-canvas'), {
+//     zoom: 4,
+//     center: (latitude, longitude)
+//   });
+//
+//   var marker = new google.maps.Marker({
+//     position: (latitude, longitude),
+//     map: map,
+//     title: 'Hello World!'
+//   });
+// } // end initMap
+
+
+
+
+
+///******************************************///
+//        map code below commented out        //
+///******************************************///
+
+//
+// /////////map code///////////////////////////
+// // initMap has been called up in doc.ready
+// ///++++++++++++can in initMap with parameters of new Lat.Lng?????? each time change states?
+// ///////map constructor /////////////////////
+// // declare variables for initMap
+// var mapCanvas, mapOptions, map;
+// //initMap map
+// function initMap() {
+//   mapCanvas = document.getElementById('map-canvas');
+//   mapOptions = {
+//       center: new google.maps.LatLng(41.931929, -87.698327),
+//       zoom: 4,
+//       mapTypeId: google.maps.MapTypeId.ROADMAP
+//    };// end options
+//
+// // +++++++tesing adding this w preset coord into initMap
+//    var marker = new google.maps.Marker({
+//      position: new google.maps.LatLng(41.931929, -87.698327),
+//      map: map,
+//      animation: google.maps.Animation.DROP
+// }) // end var marker =
+//
+//    //instantiate map constructor w/ two args
+//    // mapCanvas and mapOptions (dom selector, map ctr, zm, id)
+//    var map = new google.maps.Map(mapCanvas, mapOptions);
+//
+// } // end initMap
+// ///////////////////////////////////////////////
+//
+// //////////////////////////////////////////////
+// function setMarker(lat, long) {
+//      console.log('test');
+//      // marker object has keys: position, map, animation
+//      // position value takes 2 args:lat, long
+//      var marker = new google.maps.Marker({
+//        position: new google.maps.LatLng(lat, long),
+//        map: map, // map is a variable set above w options & canvas
+//        animation: google.maps.Animation.DROP
+//    }) // end var marker =
+// } // end setMarker
+// ////////////////////////////////////////////////
